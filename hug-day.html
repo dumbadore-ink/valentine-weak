@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hug Day - Find Your Perfect Hug!</title>
+    <link rel="stylesheet" href="hug-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="floating-hearts"></div>
+    
+    <!-- Landing Screen -->
+    <div id="landing-screen" class="screen active">
+        <div class="content">
+            <h1 class="title">How are you feeling today?</h1>
+            <p class="subtitle">Find your perfect hug based on your mood</p>
+            <button class="start-btn" onclick="startQuiz()">Start Quiz</button>
+        </div>
+    </div>
+    
+    <!-- Quiz Screen -->
+    <div id="quiz-screen" class="screen">
+        <div class="quiz-container">
+            <div class="progress-bar">
+                <div class="progress-fill" id="progress-fill"></div>
+                <span class="progress-text" id="progress-text">Question 1 of 6</span>
+            </div>
+            
+            <div class="question-card">
+                <h2 class="question" id="question-text"></h2>
+                <div class="answers" id="answers-container"></div>
+                <button class="back-btn" onclick="previousQuestion()" id="back-btn" style="display: none;">Back</button>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Results Screen -->
+    <div id="results-screen" class="screen">
+        <div class="result-container">
+            <div class="hug-emoji" id="hug-emoji"></div>
+            <h1 class="hug-title" id="hug-title"></h1>
+            <p class="hug-description" id="hug-description"></p>
+            <div class="hug-explanation" id="hug-explanation"></div>
+                <h3>Why this hug?</h3>
+                <p id="hug-reason"></p>
+            </div>
+            <div class="action-buttons">
+                <button class="share-btn" onclick="shareResult()">Share with everyone</button>
+                <button class="retake-btn" onclick="retakeQuiz()">Retake for more hugs</button> 
+            </div>
+        </div>
+    </div>
+    
+    <script src="hug-day.js"></script>
+</body>
+</html>

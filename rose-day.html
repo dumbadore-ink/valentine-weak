@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rose Day</title>
+    <link rel="stylesheet" href="rose-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="floating-roses"></div>
+    <div class="confetti-container"></div>
+    
+    <section class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">Happy Rose Day</h1>
+            <p class="hero-subtitle">A rose for every beautiful moment we share</p>
+            <button class="cta-button" id="start-journey">Begin Our Journey</button>
+        </div>
+    </section>
+
+    <section class="message-section">
+        <div class="message-container">
+            <h2 class="message-title">To My Love</h2>
+            <div class="message-content">
+                <p class="typing-text" id="love-message"></p>
+            </div>
+        </div>
+    </section>
+
+    <section class="rose-gallery">
+        <div class="gallery-container">
+            <h2 class="gallery-title">Every rose here reflects you</h2>
+    
+            <div class="rose-cards">
+                <div class="rose-card" data-rose="red">
+                    <div class="rose-image">🌺</div>
+                    <h3>Passionate Red</h3>
+                    <p>
+                        Your love for me burns with intensity and passion.
+                    </p>
+                </div>
+    
+                <div class="rose-card" data-rose="pink">
+                    <div class="rose-image">🌸</div>
+                    <h3>Sweet Pink</h3>
+                    <p>
+                        Your love is gentle and warm.
+                    </p>
+                </div>
+    
+                <div class="rose-card" data-rose="white">
+                    <div class="rose-image">💮</div>
+                    <h3>Pure White</h3>
+                    <p>
+                        Your love is honest, calm, sincere and keeps me grounded.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+    <section class="gift-preview">
+        <div class="envelope-card" id="envelope">
+            <div class="envelope-front">
+                <div class="heart-seal"><b>TAP</b></div>
+            </div>
+            <div class="envelope-back">
+                <div class="message-preview">
+                    <p id="preview-text">Your special message awaits...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="final-cta">
+        <div class="cta-container">
+            <h2>Send Your Rose</h2>
+            <button class="send-button" id="send-rose">Deliver My Rose 🌹</button>
+            <div class="success-message" id="success-message" style="display: none;">
+                Your rose has been delivered 🌹
+            </div>
+        </div>
+    </section>
+
+    <footer class="rose-footer">
+        <div style="color: #FFDFE9; text-align: center;"><h3> You may be thiking why celebrate this week 1 week late? Well, you have to wait some more time for the reason.</h3></div>
+    </footer>
+
+    <script src="rose-day.js"></script>
+</body>
+</html>

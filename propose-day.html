@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propose Day</title>
+    <link rel="stylesheet" href="propose-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Handlee&family=Kalam:wght@300;400&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="paper-texture"></div>
+    
+    <!-- Hero Banner -->
+    <header class="hero-banner">
+        <div class="hero-content">
+            <h1 class="question">Will you be my Valentine?</h1>
+            <p class="subtext">This is a serious question... and I DARE YOU TO SAY NO!</p>
+        </div>
+    </header>
+    
+    <!-- Playground -->
+    <main class="playground">
+        
+        <div class="buttons-container">
+            <button class="btn yes-btn" id="yes-btn">
+                <span class="btn-text">Yes</span>
+            </button>
+            <button class="btn no-btn" id="no-btn">
+                <span class="btn-text">No</span>
+            </button>
+        </div>
+        
+        <div class="success-message" id="success-message" style="display: none;">
+            <h2 class="success-title">Lol </h2>
+            <p class="success-text">As I said, NO is not an option! My co-pilot</p>
+            <p class="success-text">Why not try your luck with NO again?</p>
+            
+            <div class="heart-animation">
+                <div class="floating-heart">❤️</div>
+                <div class="floating-heart">💕</div>
+                <div class="floating-heart">💖</div>
+            </div>
+            
+            <button class="btn retry-btn" id="retry-btn">
+                <span class="btn-text">Try Again</span>
+            </button>
+        </div>
+    </main>
+    
+    <script src="propose-day.js"></script>
+</body>
+</html>

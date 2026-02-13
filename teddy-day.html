@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teddy Day</title>
+    <link rel="stylesheet" href="teddy-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;600;700&family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="cotton-clouds"></div>
+    <div class="toy-shelf"></div>
+    <div class="sparkles-container"></div>
+    
+    <main class="teddy-container">
+        <!-- Hero Section -->
+        <section class="hero-section">
+            <h1 class="hero-title">Build A Bear, Share The Love 🧸</h1>
+            <p class="hero-subtitle">Create your perfect cuddle buddy</p>
+            
+            <div class="teddy-preview" id="teddy-preview">
+                <svg class="teddy-bear" id="teddy-bear" viewBox="0 0 300 350" width="300" height="350">
+                    <defs>
+                        <filter id="fluff">
+                            <feTurbulence type="fractalNoise" baseFrequency="0.9" numOctaves="4" />
+                            <feDisplacementMap in="SourceGraphic" scale="3" />
+                        </filter>
+                        <radialGradient id="teddyGradient">
+                            <stop offset="0%" style="stop-color:#E5B88A;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#D4A373;stop-opacity:1" />
+                        </radialGradient>
+                        <radialGradient id="bellyGradient">
+                            <stop offset="0%" style="stop-color:#FFF5E1;stop-opacity:1" />
+                            <stop offset="100%" style="stop-color:#F5DEB3;stop-opacity:1" />
+                        </radialGradient>
+                    </defs>
+                    
+                    <!-- Left Ear -->
+                    <ellipse class="teddy-part ear-left" cx="90" cy="60" rx="35" ry="40" fill="url(#teddyGradient)" />
+                    <ellipse cx="90" cy="65" rx="20" ry="25" fill="#C19A6B" opacity="0.7" />
+                    
+                    <!-- Right Ear -->
+                    <ellipse class="teddy-part ear-right" cx="210" cy="60" rx="35" ry="40" fill="url(#teddyGradient)" />
+                    <ellipse cx="210" cy="65" rx="20" ry="25" fill="#C19A6B" opacity="0.7" />
+                    
+                    <!-- Head -->
+                    <circle class="teddy-part head" cx="150" cy="100" r="70" fill="url(#teddyGradient)" />
+                    
+                    <!-- Left Eye -->
+                    <g class="eye-left">
+                        <ellipse cx="125" cy="95" rx="8" ry="12" fill="#2C1810" />
+                        <ellipse cx="128" cy="92" rx="3" ry="4" fill="#FFFFFF" />
+                    </g>
+                    
+                    <!-- Right Eye -->
+                    <g class="eye-right">
+                        <ellipse cx="175" cy="95" rx="8" ry="12" fill="#2C1810" />
+                        <ellipse cx="178" cy="92" rx="3" ry="4" fill="#FFFFFF" />
+                    </g>
+                    
+                    <!-- Snout -->
+                    <ellipse cx="150" cy="115" rx="25" ry="20" fill="url(#bellyGradient)" />
+                    
+                    <!-- Nose -->
+                    <ellipse cx="150" cy="110" rx="10" ry="8" fill="#8B4513" />
+                    
+                    <!-- Mouth -->
+                    <path d="M 145 118 Q 150 123 155 118" stroke="#8B4513" stroke-width="2" fill="none" stroke-linecap="round" />
+                    
+                    <!-- Body -->
+                    <ellipse class="teddy-part body" cx="150" cy="220" rx="75" ry="85" fill="url(#teddyGradient)" />
+                    
+                    <!-- Belly Patch -->
+                    <ellipse cx="150" cy="230" rx="45" ry="55" fill="url(#bellyGradient)" />
+                    
+                    <!-- Left Arm -->
+                    <g class="arm-left">
+                        <ellipse cx="80" cy="200" rx="25" ry="50" fill="url(#teddyGradient)" transform="rotate(-20 80 200)" />
+                        <ellipse cx="70" cy="240" rx="22" ry="22" fill="url(#bellyGradient)" />
+                    </g>
+                    
+                    <!-- Right Arm -->
+                    <g class="arm-right">
+                        <ellipse cx="220" cy="200" rx="25" ry="50" fill="url(#teddyGradient)" transform="rotate(20 220 200)" />
+                        <ellipse cx="230" cy="240" rx="22" ry="22" fill="url(#bellyGradient)" />
+                    </g>
+                    
+                    <!-- Left Leg -->
+                    <g class="leg-left">
+                        <ellipse cx="115" cy="290" rx="28" ry="45" fill="url(#teddyGradient)" />
+                        <ellipse cx="115" cy="325" rx="30" ry="20" fill="url(#bellyGradient)" />
+                    </g>
+                    
+                    <!-- Right Leg -->
+                    <g class="leg-right">
+                        <ellipse cx="185" cy="290" rx="28" ry="45" fill="url(#teddyGradient)" />
+                        <ellipse cx="185" cy="325" rx="30" ry="20" fill="url(#bellyGradient)" />
+                    </g>
+                    
+                    <!-- Accessories Container -->
+                    <g id="teddy-accessories" class="accessories-layer">
+                        <!-- Accessories will be added dynamically -->
+                    </g>
+                </svg>
+                
+                <button class="hug-btn" id="hug-btn">
+                    <span class="btn-text">Give Hug 🤗</span>
+                </button>
+            </div>
+        </section>
+        
+        <!-- Customization Workshop -->
+        <section class="customization-workshop">
+            <div class="workshop-header">
+                <h2 class="workshop-title">Teddy Workshop</h2>
+                <p class="workshop-subtitle">Design your perfect friend</p>
+            </div>
+            
+            <div class="workshop-content">
+                <!-- Size Selection -->
+                <div class="custom-group">
+                    <h3 class="group-title">Size</h3>
+                    <div class="size-options">
+                        <button class="size-btn" data-size="small">Small</button>
+                        <button class="size-btn active" data-size="medium">Medium</button>
+                        <button class="size-btn" data-size="large">Large</button>
+                    </div>
+                </div>
+                
+                <!-- Color Selection -->
+                <div class="custom-group">
+                    <h3 class="group-title">Fur Color</h3>
+                    <div class="color-options">
+                        <button class="color-btn" data-color="#8B4513" style="background: #8B4513;"></button>
+                        <button class="color-btn" data-color="#FFFFFF" style="background: #FFFFFF;"></button>
+                        <button class="color-btn" data-color="#696969" style="background: #696969;"></button>
+                        <button class="color-btn" data-color="#D2691E" style="background: #D2691E;"></button>
+                    </div>
+                </div>
+                
+                <!-- Accessories -->
+                <div class="custom-group">
+                    <h3 class="group-title">Accessories</h3>
+                    <div class="accessory-options">
+                        <button class="accessory-btn" data-accessory="bowtie">
+                            <span class="accessory-icon">🎀</span>
+                            <span>Bow Tie</span>
+                        </button>
+                        <button class="accessory-btn" data-accessory="heart">
+                            <span class="accessory-icon">❤️</span>
+                            <span>Heart Patch</span>
+                        </button>
+                        <button class="accessory-btn" data-accessory="ribbon">
+                            <span class="accessory-icon">🎗</span>
+                            <span>Ribbon</span>
+                        </button>
+                        <button class="accessory-btn" data-accessory="glasses">
+                            <span class="accessory-icon">👓</span>
+                            <span>Glasses</span>
+                        </button>
+                        <button class="accessory-btn" data-accessory="hat">
+                            <span class="accessory-icon">🎩</span>
+                            <span>Top Hat</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+    
+    <script src="teddy-day.js"></script>
+</body>
+</html>

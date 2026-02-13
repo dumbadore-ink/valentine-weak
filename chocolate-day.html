@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chocolate Day - Valentine Week</title>
+    <link rel="stylesheet" href="chocolate-day.css">
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="chocolate-background">
+        <div class="floating-chips"></div>
+        <div class="melting-chocolate-container">
+            <img src="assets/chocolate/Melting Chocolate 1.png" alt="Melting Chocolate" class="melting-chocolate melting-1">
+            <img src="assets/chocolate/Melting Chocolate 2.png" alt="Melting Chocolate" class="melting-chocolate melting-2">
+            <img src="assets/chocolate/Melting Chocolate 1.png" alt="Melting Chocolate" class="melting-chocolate melting-3">
+            <img src="assets/chocolate/Melting Chocolate 2.png" alt="Melting Chocolate" class="melting-chocolate melting-4">
+        </div>
+    </div>
+
+    <main class="chocolate-container">
+        <header class="chocolate-header">
+            <h1 class="chocolate-title">Hey most chocolaty cutie</h1>
+            <p class="chocolate-subtitle">You have no idea how much sweet you are. You're the sweetest. And even your sweetness have lots of shades</p>
+        </header>
+
+        <section class="chocolate-selection">
+            <div class="chocolate-grid">
+                <div class="chocolate-card" data-chocolate="dark">
+                    <div class="chocolate-image-container">
+                        <img src="assets/chocolate/Dark chocolate.png" alt="Dark Chocolate" class="chocolate-image">
+                        <div class="chocolate-overlay"></div>
+                    </div>
+                    <h3>Dark Chocolate</h3>
+                    <p>Classy and elegant</p>
+                </div>
+
+                <div class="chocolate-card" data-chocolate="milk">
+                    <div class="chocolate-image-container">
+                        <img src="assets/chocolate/Milk chocolate.png" alt="Milk Chocolate" class="chocolate-image">
+                        <div class="chocolate-overlay"></div>
+                    </div>
+                    <h3>Milk Chocolate</h3>
+                    <p>Sweet and creamy</p>
+                </div>
+
+                <div class="chocolate-card" data-chocolate="nutty">
+                    <div class="chocolate-image-container">
+                        <img src="assets/chocolate/Nutty chocolate.png" alt="Nutty Chocolate" class="chocolate-image">
+                        <div class="chocolate-overlay"></div>
+                    </div>
+                    <h3>Nutty Chocolate</h3>
+                    <p>Nutty and naughty</p>
+                </div>
+
+                <div class="chocolate-card" data-chocolate="truffle">
+                    <div class="chocolate-image-container">
+                        <img src="assets/chocolate/Truffle.png" alt="Chocolate Truffle" class="chocolate-image">
+                        <div class="chocolate-overlay"></div>
+                    </div>
+                    <h3>Chocolate Truffle</h3>
+                    <p>Decadent and divine</p>
+                </div>
+            </div>
+        </section>
+
+        <div class="taste-button-container">
+            <button id="taste-button" class="taste-button" disabled>See your sweetness</button>
+        </div>
+    </main>
+
+    <div id="message-modal" class="message-modal">
+        <div class="modal-content">
+            <div class="celebration-container">
+                <div class="floating-hearts"></div>
+                <div class="floating-chocolates"></div>
+            </div>
+            <h2 id="personalized-title" class="personalized-title"></h2>
+            <br>
+            <p id="personalized-message" class="personalized-message"></p>
+            <button id="close-modal" class="close-button">Choose Another</button>
+        </div>
+    </div>
+
+    <script src="chocolate-day.js"></script>
+</body>
+</html>
