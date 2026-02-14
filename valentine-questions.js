@@ -1,6 +1,6 @@
 const questions = [
     {
-        question: "Where did I use my first pick up line?",
+        question: "What was my first pick up line?",
         options: [
             "Are you a tissue? Cuz I can use you and throw away",
             "Are you a library book? Cuz I'm checking you out!",
@@ -218,7 +218,7 @@ const questions = [
             "5",
             "0"
         ],
-        correct: 4
+        correct: 3
     },
     {
         question: "What is the recent milestone we crossed in our Snapchat streak?",
@@ -234,7 +234,7 @@ const questions = [
         question: "Which food have we not eaten together yet?",
         options: [
             "Cheesecake",
-            "Waffleich",
+            "Waff-wich",
             "Pasta",
             "Biryani"
         ],
