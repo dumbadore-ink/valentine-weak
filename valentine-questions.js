@@ -159,6 +159,76 @@ const questions = [
             "Sentry"
         ],
         correct: 3
+    },
+    {
+        question: "How many birthday gifts have you given to me in 2024?",
+        options: [
+            "0",
+            "4",
+            "9",
+            "13"
+        ],
+        correct: 2
+    },
+    {
+        question: "Which color is our favorite?",
+        options: [
+            "Red",
+            "Blue",
+            "Black",
+            "Yellow"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which 'ist' are you not?",
+        options: [
+            "Racist",
+            "Socialist",
+            "Sexist",
+            "Casteist"
+        ],
+        correct: 2
+    },
+    {
+        question: "Which food is your favorite but not mine?",
+        options: [
+            "Pizza",
+            "Chole Bhature",
+            "Rolls",
+            "Burrito"
+        ],
+        correct: 3
+    },
+    {
+        question: "Which food have we not eaten together yet?",
+        options: [
+            "Cheesecake",
+            "Waffleich",
+            "Pasta",
+            "Biryani"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which is an unfamiliar word for you?",
+        options: [
+            "Cuta",
+            "Kish",
+            "Azen",
+            "Meany"
+        ],
+        correct: 2
+    },
+    {
+        question: "Which is an unfamiliar word for you?",
+        options: [
+            "Cuta",
+            "Kish",
+            "Azen",
+            "Meany"
+        ],
+        correct: 2
     }
 ];
 
