@@ -201,6 +201,36 @@ const questions = [
         correct: 3
     },
     {
+        question: "Which lasagna are you?",
+        options: [
+            "Beach",
+            "Bich",
+            "Bitch",
+            "Btech"
+        ],
+        correct: 1
+    },
+    {
+        question: "How many times have you done a headstand for me?",
+        options: [
+            "19",
+            "11",
+            "5",
+            "0"
+        ],
+        correct: 4
+    },
+    {
+        question: "What is the recent milestone we crossed in our Snapchat streak?",
+        options: [
+            "1000",
+            "900",
+            "950",
+            "800"
+        ],
+        correct: 1
+    },
+    {
         question: "Which food have we not eaten together yet?",
         options: [
             "Cheesecake",
@@ -211,25 +241,65 @@ const questions = [
         correct: 1
     },
     {
-        question: "Which is an unfamiliar word for you?",
+        question: "When is the date we were in the same place before we knew each other?",
         options: [
-            "Cuta",
-            "Kish",
-            "Azen",
-            "Meany"
+            "19 Jan 2023",
+            "14 Feb 2023",
+            "10 Dec 2022",
+            "15 Feb 2022"
         ],
         correct: 2
     },
     {
-        question: "Which is an unfamiliar word for you?",
+        question: "What is an unfamiliar word for you?",
         options: [
             "Cuta",
-            "Kish",
+            "Pacman",
             "Azen",
-            "Meany"
+            "Meany Mouse"
         ],
         correct: 2
-    }
+    },
+    {
+        question: "In which sport can you not beat me?",
+        options: [
+            "Badminton",
+            "Basketball",
+            "Thumb fighting",
+            "Chess"
+        ],
+        correct: 3
+    },
+    {
+        question: "Which animal have I not associated you with yet?",
+        options: [
+            "Lion",
+            "Panda",
+            "Bear",
+            "Cobra"
+        ],
+        correct: 3
+    },
+    {
+        question: "What do I want and will make you be in the future, including as my wife?",
+        options: [
+            "Co-founder of Arch Firm",
+            "Software Engineer",
+            "Acrobat and Gymnast",
+            "Volleyball Player"
+        ],
+        correct: 0
+    },
+    {
+        question: "What will I always say to you no matter what, more than anything else?",
+        options: [
+            "I love you",
+            "I miss you",
+            "I wish you",
+            "I bless you"
+        ],
+        correct: 0
+    },
 ];
 
 window.questions = questions;
