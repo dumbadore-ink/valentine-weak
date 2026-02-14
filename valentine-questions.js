@@ -1,13 +1,13 @@
 const questions = [
     {
-        question: "Where was my first pick up line?",
+        question: "Where did I use my first pick up line?",
         options: [
             "Are you a tissue? Cuz I can use you and throw away",
             "Are you a library book? Cuz I'm checking you out!",
             "Are you a 9 out of 10? Cuz I'm the one you need",
-            "Spider are great at weaving webs but suck at giving replies"
+            "Spiders are great at weaving webs but suck at giving replies"
         ],
-        correct: 2
+        correct: 3
     },
     {
         question: "What was our 0.5 date?",
@@ -17,17 +17,17 @@ const questions = [
             "Paras Walk",
             "Select city walk"
         ],
-        correct: 3
+        correct: 2
     },
     {
         question: "What was the reason I gave you to hold your hand for the first time?",
         options: [
             "I was scared of the dogs",
             "I can do palm reading",
-            "I can listen to heart beat with veins",
+            "I can listen to your heartbeat through your veins",
             "Comparing hand sizes"
         ],
-        correct: 2
+        correct: 1
     },
     {
         id: 4,
@@ -38,7 +38,7 @@ const questions = [
             "23 Jul",
             "25 Dec"
         ],
-        correct: 3
+        correct: 2
     },
     {
         question: "Which date changed the course of our relationship?",
@@ -48,47 +48,37 @@ const questions = [
             "23 Aug",
             "21 Dec"
         ],
-        correct: 1
+        correct: 0
     },
     {
-        question: "What is our go to place to eat?",
+        question: "What is our go-to place to eat?",
         options: [
             "Taco Bell",
             "Tiny Tuscan",
             "KFC",
             "Chillis"
         ],
-        correct: 2
+        correct: 3
     },
     {
-        question: "What we say when we do same thing?",
+        question: "What do we say when we do the same thing?",
         options: [
             "Twin",
             "Same same but different",
             "Déjà vu",
             "Mirror"
         ],
-        correct: 1
+        correct: 0
     },
     {
-        question: "What I described my personality is like when I met you family?",
+        question: "How did I describe my personality when I met your family?",
         options: [
             "Like a lion",
             "Like a mirror",
             "Like a dog",
             "Like a beer"
         ],
-        correct: 1
-    },
-    {
-        question: "What I described my personality is like when I met you family?",
-        options: [
-            "Like a lion",
-            "Like a mirror",
-            "Like a dog",
-            "Like a beer"
-        ],
-        correct: 1
+        correct: 3
     },
     {
         question: "What is our code word for SVC?",
@@ -98,7 +88,7 @@ const questions = [
             "Acting",
             "Hockey"
         ],
-        correct: 1
+        correct: 0
     },
     {
         question: "Which Ananya is #1 on my list?",
@@ -113,32 +103,62 @@ const questions = [
     {
         question: "Which Ananya is last on my list?",
         options: [
-            "Self hater Ananya",
+            "Self-hater Ananya",
             "Drunk Ananya",
             "Unclean Ananya",
             "Stressed Ananya"
         ],
-        correct: 1
+        correct: 0
     },
     {
-        question: "When is the first time we drank together?",
+        question: "When did we drink together for the first time?",
         options: [
             "Our first anniversary",
             "When we watched Interstellar",
             "Our second anniversary",
-            "Cristman Party"
+            "Christmas Party"
         ],
-        correct: 1
+        correct: 0
     },
     {
-        question: "If I had penny for every time you slept on me, how many penny(s) would I have?",
+        question: "If I had a penny for every time you slept on me after drinking, how many pennies would I have?",
         options: [
             "0",
             "1",
             "2",
             "3"
         ],
+        correct: 2
+    },
+    {
+        question: "What was our position when you said 'I love you' to me?",
+        options: [
+            "69",
+            "=",
+            "||",
+            "()"
+        ],
         correct: 1
+    },
+    {
+        question: "What kind of distance is our relationship?",
+        options: [
+            "Online",
+            "Short distance",
+            "Medium distance",
+            "Long distance"
+        ],
+        correct: 2
+    },
+    {
+        question: "What book do I have 2 copies of?",
+        options: [
+            "Tintin",
+            "Nightwing",
+            "Batman",
+            "Sentry"
+        ],
+        correct: 3
     }
 ];
 

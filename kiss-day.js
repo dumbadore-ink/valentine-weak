@@ -69,7 +69,7 @@ class KissCounterGame {
             
             // Special Achievements
             { id: 'midnight_kisser', name: 'Midnight Kisser', description: 'Play between 11pm-1am', icon: '🌙', condition: () => this.checkTimeAchievement(23, 1) },
-            { id: 'party_animal', name: 'Party Animal', description: 'Send 100 kisses on our Kiss Day (Feb 14)', icon: '🎉', condition: () => this.checkKissDayAchievement() },
+            { id: 'party_animal', name: 'Party Animal', description: 'Send 100 kisses on our Kiss Day', icon: '🎉', condition: () => this.checkKissDayAchievement() },
             { id: 'perfectionist', name: 'Perfectionist', description: 'Reach exactly 1,000 kisses', icon: '💯', condition: () => this.gameState.kisses === 1000 },
             { id: 'completionist', name: 'Completionist', description: 'Unlock all achievements', icon: '🏆', condition: () => this.gameState.achievements.length >= this.achievements.length - 1 }
         ];
