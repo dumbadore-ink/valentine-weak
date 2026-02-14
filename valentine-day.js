@@ -1,4 +1,3 @@
-
 class LoveQuiz {
     constructor() {
         this.questions = [];
@@ -17,31 +16,38 @@ class LoveQuiz {
         // Result Tiers
         this.resultTiers = [
             {
-                minPercentage: 87,
+                minPercentage: 100,
                 maxPercentage: 100,
-                title: "Soulmate Status",
-                message: "You know our story by heart. Every moment, every laugh, every tear - they're all etched in your memory. This is true love. 💝",
+                title: "My Twin",
+                message: "You know our story by heart. Every moment, every laugh, every tear, even when you are detoriating you memory.",
                 emoji: "💝"
             },
             {
-                minPercentage: 67,
-                maxPercentage: 86,
-                title: "Love Expert",
-                message: "You remember the important moments that matter most. Our journey together has created memories worth cherishing forever. ❤️",
+                minPercentage: 75,
+                maxPercentage: 99,
+                title: "Love Guru",
+                message: "Hopefully you remeber the most important once not the useless ones.",
                 emoji: "❤️"
             },
             {
-                minPercentage: 47,
-                maxPercentage: 66,
-                title: "Sweet Heart",
-                message: "Our journey is still unfolding, and every day writes a new page in our story. Here's to creating more beautiful memories together! 💕",
+                minPercentage: 51,
+                maxPercentage: 74,
+                title: "Do better",
+                message: "I know you got the alzimers. So it's fine.",
                 emoji: "💕"
             },
             {
+                minPercentage: 1,
+                maxPercentage: 50,
+                title: "I expected better",
+                message: "I'm dissapointed. I still love you but dissapointed.",
+                emoji: "😔"
+            },
+            {
                 minPercentage: 0,
-                maxPercentage: 46,
+                maxPercentage: 0,
                 title: "Tf??",
-                message: "Every love story has its surprises... and you forgot most of all of them. But that's okay - we can make new memories together! 😂",
+                message: "Well there is a saying - To give every answer wrong you have to know every right answer. So fair game",
                 emoji: "😂"
             }
         ];
@@ -49,7 +55,7 @@ class LoveQuiz {
         // Loading messages
         this.loadingMessages = [
             "Counting our memories...",
-            "Reviewing our journey...",
+            "AI is evaluating our journey...",
             "Almost there..."
         ];
         
@@ -211,11 +217,11 @@ class LoveQuiz {
         // Render options
         const optionsContainer = document.getElementById('options-container');
         optionsContainer.innerHTML = '';
-        
+        const correctAnswer = question.correct;
         question.options.forEach((option, optionIndex) => {
             const optionBtn = document.createElement('button');
             optionBtn.className = 'option-btn';
-            optionBtn.innerHTML = `<span>${option.text}</span>`;
+            optionBtn.innerHTML = `<span>${option}</span>`;
             
             // Check if this option was previously selected
             const previousAnswer = this.state.answers[index];
@@ -223,7 +229,7 @@ class LoveQuiz {
                 optionBtn.classList.add('selected');
             }
             
-            optionBtn.addEventListener('click', () => this.selectAnswer(optionIndex, option.correct === true));
+            optionBtn.addEventListener('click', () => this.selectAnswer(optionIndex, correctAnswer === optionIndex));
             optionsContainer.appendChild(optionBtn);
         });
         
@@ -456,5 +462,6 @@ class LoveQuiz {
 }
 
 document.addEventListener("DOMContentLoaded", () => {
+    document.getElementById('question-count').textContent = questions.length;
     LoveQuiz.create();
 });  

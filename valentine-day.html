@@ -19,7 +19,9 @@
             <h1 class="welcome-title">Our Love Story</h1>
             <p class="welcome-subtitle">A Romantic Journey Quiz</p>
             <p class="welcome-description">
-                How well do you know our story? Answer 15 questions about our special moments 
+                How well do you know our story? Answer
+                <span id="question-count"></span>
+                questions about our special moments 
                 together and discover just how much we mean to each other.
             </p>
             <button class="begin-btn" id="begin-btn">Begin Our Journey</button>
@@ -32,7 +34,7 @@
             <div class="progress-bar">
                 <div class="progress-fill" id="progress-fill"></div>
             </div>
-            <div class="progress-text" id="progress-text">Question 1 of 15</div>
+            <div class="progress-text" id="progress-text"></div>
         </div>
 
         <div class="question-container" id="question-container">
@@ -63,13 +65,10 @@
     <!-- Results Screen -->
     <div class="screen results-screen hidden" id="results-screen">
         <div class="results-content">
-            <div class="result-emoji" id="result-emoji">💝</div>
-            <h1 class="result-title" id="result-title">Soulmate Status</h1>
-            <div class="result-score" id="result-score">15 / 15</div>
-            <p class="result-message" id="result-message">
-                You know our story by heart. Every moment, every laugh, every tear - 
-                they're all etched in your memory. This is true love.
-            </p>
+            <div class="result-emoji" id="result-emoji"></div>
+            <h1 class="result-title" id="result-title"></h1>
+            <div class="result-score" id="result-score"></div>
+            <p class="result-message" id="result-message"></p>
             
             <div class="results-buttons">
                 <button class="result-btn share-btn" id="share-btn">

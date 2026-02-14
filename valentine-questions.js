@@ -1,87 +1,145 @@
-// Valentine's Day Quiz - Questions
-
 const questions = [
     {
-        id: 1,
-        question: "Where did we first meet?",
+        question: "Where was my first pick up line?",
         options: [
-            { text: "Coffee shop", correct: false },
-            { text: "College campus", correct: false },
-            { text: "Friend's party", correct: true },
-            { text: "Online dating app", correct: false }
-        ]
+            "Are you a tissue? Cuz I can use you and throw away",
+            "Are you a library book? Cuz I'm checking you out!",
+            "Are you a 9 out of 10? Cuz I'm the one you need",
+            "Spider are great at weaving webs but suck at giving replies"
+        ],
+        correct: 2
     },
     {
-        id: 2,
-        question: "What was our first date?",
+        question: "What was our 0.5 date?",
         options: [
-            { text: "Movie theater", correct: false },
-            { text: "Fancy restaurant", correct: false },
-            { text: "Walk in the park", correct: true },
-            { text: "Coffee date", correct: false }
-        ]
+            "AM/PM",
+            "Oriental fusion",
+            "Paras Walk",
+            "Select city walk"
+        ],
+        correct: 3
     },
     {
-        id: 3,
-        question: "When is our anniversary?",
+        question: "What was the reason I gave you to hold your hand for the first time?",
         options: [
-            { text: "January 14", correct: false },
-            { text: "February 14", correct: true },
-            { text: "March 20", correct: false },
-            { text: "December 25", correct: false }
-        ]
+            "I was scared of the dogs",
+            "I can do palm reading",
+            "I can listen to heart beat with veins",
+            "Comparing hand sizes"
+        ],
+        correct: 2
     },
     {
         id: 4,
-        question: "What's my favorite color?",
+        question: "When is our anniversary?",
         options: [
-            { text: "Blue", correct: false },
-            { text: "Pink", correct: false },
-            { text: "Purple", correct: true },
-            { text: "Red", correct: false }
-        ]
+            "27 Sep",
+            "21 Jun",
+            "23 Jul",
+            "25 Dec"
+        ],
+        correct: 3
     },
     {
-        id: 5,
-        question: "Where was our first kiss?",
+        question: "Which date changed the course of our relationship?",
         options: [
-            { text: "At the beach", correct: true },
-            { text: "Under the stars", correct: false },
-            { text: "At home", correct: false },
-            { text: "In the car", correct: false }
-        ]
+            "24 Dec",
+            "20 Jun",
+            "23 Aug",
+            "21 Dec"
+        ],
+        correct: 1
     },
     {
-        id: 6,
-        question: "What's my favorite food?",
+        question: "What is our go to place to eat?",
         options: [
-            { text: "Pizza", correct: false },
-            { text: "Sushi", correct: true },
-            { text: "Burgers", correct: false },
-            { text: "Pasta", correct: false }
-        ]
+            "Taco Bell",
+            "Tiny Tuscan",
+            "KFC",
+            "Chillis"
+        ],
+        correct: 2
     },
     {
-        id: 7,
-        question: "What's my favorite movie genre?",
+        question: "What we say when we do same thing?",
         options: [
-            { text: "Horror", correct: false },
-            { text: "Romantic comedies", correct: true },
-            { text: "Action", correct: false },
-            { text: "Sci-Fi", correct: false }
-        ]
+            "Twin",
+            "Same same but different",
+            "Déjà vu",
+            "Mirror"
+        ],
+        correct: 1
     },
     {
-        id: 8,
-        question: "What's my favorite song?",
+        question: "What I described my personality is like when I met you family?",
         options: [
-            { text: "Shape of You", correct: false },
-            { text: "Perfect", correct: true },
-            { text: "Thinking Out Loud", correct: false },
-            { text: "All of Me", correct: false }
-        ]
+            "Like a lion",
+            "Like a mirror",
+            "Like a dog",
+            "Like a beer"
+        ],
+        correct: 1
+    },
+    {
+        question: "What I described my personality is like when I met you family?",
+        options: [
+            "Like a lion",
+            "Like a mirror",
+            "Like a dog",
+            "Like a beer"
+        ],
+        correct: 1
+    },
+    {
+        question: "What is our code word for SVC?",
+        options: [
+            "Session",
+            "Fan",
+            "Acting",
+            "Hockey"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which Ananya is #1 on my list?",
+        options: [
+            "Zombie Ananya",
+            "Eating Ananya",
+            "Sleepy Ananya",
+            "Hangry Ananya"
+        ],
+        correct: 1
+    },
+    {
+        question: "Which Ananya is last on my list?",
+        options: [
+            "Self hater Ananya",
+            "Drunk Ananya",
+            "Unclean Ananya",
+            "Stressed Ananya"
+        ],
+        correct: 1
+    },
+    {
+        question: "When is the first time we drank together?",
+        options: [
+            "Our first anniversary",
+            "When we watched Interstellar",
+            "Our second anniversary",
+            "Cristman Party"
+        ],
+        correct: 1
+    },
+    {
+        question: "If I had penny for every time you slept on me, how many penny(s) would I have?",
+        options: [
+            "0",
+            "1",
+            "2",
+            "3"
+        ],
+        correct: 1
     }
 ];
 
-// Make questions available globally
 window.questions = questions;
