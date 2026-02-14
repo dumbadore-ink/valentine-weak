@@ -362,6 +362,9 @@ class LoveQuiz {
         // Show results screen
         this.showScreen('results-screen');
         
+        // Show footer
+        document.querySelector('.footer').classList.add('show');
+        
         // Clear saved progress
         localStorage.removeItem('quizProgress');
     }
@@ -398,6 +401,9 @@ class LoveQuiz {
             endTime: null,
             quizComplete: false
         };
+        
+        // Hide footer
+        document.querySelector('.footer').classList.remove('show');
         
         // Clear progress
         localStorage.removeItem('quizProgress');
